@@ -1,14 +1,14 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
+import React from 'react';
+import HomeScreen from './src/screens/Home/index'
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView,StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-      <Ionicons name="home" size={32} />
-    </View>
+    <SafeAreaView style={styles.container}>
+      <HomeScreen />
+    </SafeAreaView>
   );
 }
 
