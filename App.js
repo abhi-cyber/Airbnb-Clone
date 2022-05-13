@@ -7,10 +7,15 @@ import Post from "./src/components/Post";
 
 export default function App() {
   return (
+    <>
+    <StatusBar barStyle="dark-content" />
     <SafeAreaView style={styles.container}>
       {/*<HomeScreen />*/}
       <Post />
+      <Post />
+      <Post />
     </SafeAreaView>
+    </>
   );
 }
 
