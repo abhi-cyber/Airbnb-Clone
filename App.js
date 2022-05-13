@@ -3,11 +3,13 @@ import React from 'react';
 import HomeScreen from './src/screens/Home/index'
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaView,StyleSheet, Text, View } from 'react-native';
+import Post from "./src/components/Post";
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <HomeScreen />
+      {/*<HomeScreen />*/}
+      <Post />
     </SafeAreaView>
   );
 }
