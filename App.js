@@ -17,11 +17,10 @@ export default function App() {
   
   return (
     <SafeAreaView>
-      <StatusBar barStyle="dark-content" />
       {/* <HomeScreen /> */}
       {/* <SearchResultsScreen /> */}
-      <DestinationSearchScreen />
-      {/* <GuestsScreen /> */}
+      {/* <DestinationSearchScreen /> */}
+      <GuestsScreen />
     </SafeAreaView>
   );
 };
