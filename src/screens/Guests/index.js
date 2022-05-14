@@ -1,8 +1,12 @@
 import { StyleSheet, Text, View, Pressable } from 'react-native';
 import React from 'react';
 import styles from './styles';
+import { useState } from 'react';
 
 const GuestsScreen = () => {
+
+    const [adults, setAdults] = useState(0);
+
   return (
     <View>
         {/* Row 1: Adults */}
@@ -17,16 +21,16 @@ const GuestsScreen = () => {
             <View style={{flexDirection: 'row', alignItems: 'center'}}>
                 {/* - */}
                 <Pressable 
-                onPress={() => console.warn( '- clicked' )} // Check data not written
+                onPress={() => setAdults(adults - 1)} // Check data not written
                 style={styles.button}
                 >
                     <Text style={{fontSize: 20, color: '#474747'}}>-</Text>
                 </Pressable>
                 
-                <Text style={{marginHorizontal: 20, fontSize:16}}>0</Text>
+                <Text style={{marginHorizontal: 20, fontSize:16}}>{adults}</Text>
                 {/* + */}
                 <Pressable 
-                onPress={() => console.warn( '+ clicked' )} // Check data not written
+                onPress={() => setAdults(adults + 1)} // Check data not written
                 style={styles.button}
                 >
                     <Text style={{fontSize: 20, color: '#474747'}}>+</Text>
