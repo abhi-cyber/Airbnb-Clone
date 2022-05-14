@@ -1,19 +1,25 @@
 import {StyleSheet} from 'react-native';
 
 const styles =StyleSheet.create({
-    container: {
-        flex: 1,
-    },
+    
     row: {
-        flex: 1,
         flexDirection: 'row', 
-        margin: 2,
         justifyContent: 'space-between', 
-        padding: 20,
+        paddingVertical: 20,
+        marginHorizontal: 20,
         borderBottomWidth: 1,
         borderColor: 'lightgrey',
     },
 
+    button: {
+        borderWidth: 1,
+        width: 30,
+        height: 30,
+        borderRadius: 15,
+        alignItems: 'center',
+        borderColor: '#676767',
+        
+    }
 });
 
 export default styles;
