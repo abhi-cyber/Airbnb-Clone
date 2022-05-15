@@ -1,15 +1,16 @@
-import { View, TextInput, Text, FlatList } from 'react-native';
+import { View, TextInput, Text, FlatList, Pressable } from 'react-native';
 import React, {useState} from 'react';
 import styles from './styles';
 import searchResults from '../../../assets/data/search';
 import Ionicons from '@expo/vector-icons/Ionicons';
-
+import {useNavigation} from '@react-navigation/native';
 const DestinationSearchScreen = () => {
 
     const [inputText, setInputText] = useState('');
+    const navigation = useNavigation();
 
   return (
-    <View>
+    <View style={styles.container}>
         { /* Import Component */ }
         <TextInput 
             style={styles.textInput}
@@ -22,12 +23,12 @@ const DestinationSearchScreen = () => {
         <FlatList 
             data={searchResults}
             renderItem={({item}) => (
-            <View style={styles.row}>
+            <Pressable onPress={() => navigation.navigate('Guests')} style={styles.row}>
                 <View style={styles.iconContainer}>
                 <Ionicons name='location' size={30} />
                 </View>
                 <Text style={styles.locationText}>{item.description}</Text>
-            </View>
+            </Pressable>
             )}
         />
 
