@@ -25,9 +25,9 @@ const DestinationSearchScreen = () => {
                 textInput: styles.textInput,
             }}
             query={{
-                key: 'AIzaSyBCLOlCstUN7-hRud_ot6OFvTJ_ABcBXlk',
+                key: 'AIzaSyDAHioCOuKMQRqwEVI11lONodVnwAlESNM',
                 language: 'en',
-                type:'(cities)',
+                type: '(cities)'               
             }}
             suppressDefaultStyles
             renderRow={(item) => <SuggestionRow item={item} />}
