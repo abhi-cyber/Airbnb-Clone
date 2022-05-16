@@ -8,36 +8,30 @@ import SuggestionRow from './SuggestionRow';
 
 const DestinationSearchScreen = () => {
 
-    const [inputText, setInputText] = useState('');
     const navigation = useNavigation();
 
   return (
     <View style={styles.container}>
         { /* Import Component */ }
-    <View style={{height: 300}}>
         <GooglePlacesAutocomplete
             placeholder='Where are you going?'
             onPress={(data, details = null) => {
                 // 'details' is provided when fetchDetails = true
                 console.log(data, details);
+                navigation.navigate('Guests');
             }}
+            fetchDetails
             styles={{
                 textInput: styles.textInput,
             }}
             query={{
-                key: 'AIzaSyBKA-7XK5REfxkqq_BDU-V1zdEozZ7BbL4',
+                key: 'AIzaSyBCLOlCstUN7-hRud_ot6OFvTJ_ABcBXlk',
                 language: 'en',
+                type:'(cities)',
             }}
+            suppressDefaultStyles
             renderRow={(item) => <SuggestionRow item={item} />}
         />
-    </View>
-        <TextInput 
-            style={styles.textInput}
-            placeholder="Where are you going ?"
-            value={inputText}
-            onChangeText={setInputText}
-        />
-
     </View>
   )
 }

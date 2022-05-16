@@ -5,13 +5,13 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 
 const SuggestionRow = ({item}) => {
   return (
-        <Pressable onPress={() => navigation.navigate('Guests')} style={styles.row}>
+        <View style={styles.row}>
             <View style={styles.iconContainer}>
             <Ionicons name='location' size={30} />
             </View>
             <Text style={styles.locationText}>{item.description}</Text>
-        </Pressable>
+        </View>
   )
 }
 
-export default SuggestionRow
+export default SuggestionRow;
