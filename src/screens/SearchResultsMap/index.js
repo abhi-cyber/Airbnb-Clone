@@ -12,8 +12,11 @@ const SearchResultsMap = () => {
 
   const flatList = useRef();
 
+  const map = useRef();
+
   const viewConfig = useRef({itemVisiblePercentThreshold: 70});
 
+  // The below const syncs the marker with the bottom carousel and on changing the slider the marker will change too.
   const onViewChanged = useRef(({viewableItems}) => {
     if(viewableItems.length > 0){
       const selectedPlace = viewableItems[0].item;
@@ -29,11 +32,21 @@ const SearchResultsMap = () => {
     }
     const index = places.findIndex(place => place.id === selectedPlaceId)
     flatList.current.scrollToIndex({index})
+
+    const selectedPlace = places[index]
+    const region ={
+      latitude: selectedPlace.coordinate.latitude,
+      latitude: selectedPlace.coordinate.longitude,
+      latitudeDelta: 0.8,
+      longitudeDelta: 0.8,
+    }
+    map.current.animateToRegion(region);
   }, [selectedPlaceId])
 
   return (
     <View style={{width: '100%', height: '100%' }}>
         <MapView
+        ref={map}
         style={{width: '100%', height: '100%'}}
         provider={PROVIDER_GOOGLE}
         initialRegion={{
