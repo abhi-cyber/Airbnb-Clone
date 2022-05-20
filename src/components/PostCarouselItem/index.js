@@ -29,7 +29,8 @@ const Post = (props) => {
                 
                 {/* Old price and new Price */}
                 <Text style={styles.prices}>
-                    <Text style={styles.oldPrice}>${post.oldPrice} </Text>
+                    <Text style={styles.price}>${post.newPrice} </Text>
+                    / night
                 </Text>
 
             </View>
