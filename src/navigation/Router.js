@@ -5,6 +5,7 @@ import DestinationSearchScreen from '../screens/DestinationSearch';
 import HomeScreen from '../screens/Home';
 import GuestsScreen from '../screens/Guests';
 import HomeTabNavigator from './HomeTabNavigator';
+import PostScreen from '../screens/PostScreen/index';
 
 const Router = (props) => {
   
@@ -39,7 +40,16 @@ const Router = (props) => {
             headerTitleAlign: "center",
           }}
           />
+        <Stack.Screen 
+          name = {"Post"}
+          component = {PostScreen}
+          options={{
+            title: "Accommodation",
+            headerTitleAlign: "center",
+          }}
+          />
         </Stack.Navigator>
+
     </NavigationContainer>
   )
 }

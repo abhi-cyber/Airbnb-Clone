@@ -8,6 +8,8 @@ import Feather from 'react-native-vector-icons/Feather';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import ExploreNavigator from './ExploreNavigator';
 import SearchResultsMap from '../screens/SearchResultsMap';
+import PostScreen from '../screens/PostScreen'
+import Guests from '../screens/Guests'
 
 
 const Tab = createBottomTabNavigator();
@@ -19,8 +21,8 @@ const HomeTabNavigator = (props) => {
     }}>
         <Tab.Screen
             name={"Explore"}
-            // component={ExploreNavigator}
-            component={SearchResultsMap}
+            component={ExploreNavigator}
+            // component={SearchResultsMap}
             options={{
               headerShown: false,
                 tabBarIcon: ({color}) => (

@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './styles'
 import { Text, View, ImageBackground,Pressable } from 'react-native';
 import {useNavigation} from '@react-navigation/native';
-import SVGComponent from '../../components/Post/SvgIcon';
+// import SVGComponent from '../../components/Post/SvgIcon';
 
 const HomeScreen = (props) => {
 
