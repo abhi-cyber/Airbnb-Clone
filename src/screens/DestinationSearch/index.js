@@ -5,7 +5,7 @@ import searchResults from '../../../assets/data/search';
 import {useNavigation} from '@react-navigation/native';
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
 import SuggestionRow from './SuggestionRow';
-
+// import { Card } from 'react-native-elements';
 const DestinationSearchScreen = () => {
 
     const navigation = useNavigation();
@@ -25,13 +25,22 @@ const DestinationSearchScreen = () => {
                 textInput: styles.textInput,
             }}
             query={{
-                key: 'AIzaSyBYtr6K8LcUo1uUF2TRC2blrAx8s480cd4',
+                key: 'AIzaSyBeeJHPqekzmFB6kYDiSixSVAIYE_KBfqc',
                 language: 'en',
                 type: '(cities)'               
             }}
             suppressDefaultStyles
             renderRow={(item) => <SuggestionRow item={item} />}
         />
+        {/* <Card>
+            {
+                <Image 
+                    // style={styles.image}
+                    resizeMode="cover"
+                    source={{ URL: "https://in.bmscdn.com/m6/images/common-modules/regions/chd.png" }}
+                />
+            }
+        </Card> */}
     </View>
   )
 }

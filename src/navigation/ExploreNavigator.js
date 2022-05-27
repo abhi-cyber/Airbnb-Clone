@@ -22,7 +22,7 @@ const Router = (props) => {
         name={'SearchResults'}
         component={SearchResultsTabNavigator}
         options={{
-          title: 'Search your destination',
+          title: 'Select Destination City',
           headerTitleAlign: "center",
         }}
       />
