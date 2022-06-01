@@ -9,8 +9,6 @@ const DestinationSearchScreen = () => {
 
     const navigation = useNavigation();
 
-    const route = useRoute();
-
   return (
     <View style={styles.container}>
         { /* Import Component */ }

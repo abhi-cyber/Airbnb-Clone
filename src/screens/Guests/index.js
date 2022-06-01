@@ -2,7 +2,7 @@ import { StyleSheet, Text, View, Pressable } from 'react-native';
 import React from 'react';
 import styles from './styles';
 import { useState } from 'react';
-import {useNavigation, useRoute} from '@react-navigation/native';
+import {useNavigation} from '@react-navigation/native';
 
 
 const GuestsScreen = () => {
@@ -107,9 +107,6 @@ const GuestsScreen = () => {
                 screen: 'Explore',
                 params: {
                     screen : 'SearchResults',
-                    params: {
-                        viewport: routes.params.viewport,
-                    }
                 },
             })
         }
