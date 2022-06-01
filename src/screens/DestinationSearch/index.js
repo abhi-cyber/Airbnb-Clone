@@ -1,11 +1,10 @@
 import { View, TextInput, Text, FlatList, Pressable } from 'react-native';
 import React, {useState} from 'react';
 import styles from './styles';
-import searchResults from '../../../assets/data/search';
 import {useNavigation} from '@react-navigation/native';
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
 import SuggestionRow from './SuggestionRow';
-// import { Card } from 'react-native-elements';
+
 const DestinationSearchScreen = () => {
 
     const navigation = useNavigation();
@@ -25,22 +24,14 @@ const DestinationSearchScreen = () => {
                 textInput: styles.textInput,
             }}
             query={{
-                key: 'AIzaSyBeeJHPqekzmFB6kYDiSixSVAIYE_KBfqc',
+                // key: 'AIzaSyBeeJHPqekzmFB6kYDiSixSVAIYE_KBfqc',
+                key: 'AIzaSyBJ9rQcb3687-88oGhkPOlCi4rBanrENZs' ,
                 language: 'en',
                 type: '(cities)'               
             }}
             suppressDefaultStyles
             renderRow={(item) => <SuggestionRow item={item} />}
         />
-        {/* <Card>
-            {
-                <Image 
-                    // style={styles.image}
-                    resizeMode="cover"
-                    source={{ URL: "https://in.bmscdn.com/m6/images/common-modules/regions/chd.png" }}
-                />
-            }
-        </Card> */}
     </View>
   )
 }
