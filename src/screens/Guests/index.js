@@ -3,6 +3,7 @@ import React from 'react';
 import styles from './styles';
 import { useState } from 'react';
 import {useNavigation} from '@react-navigation/native';
+import routes from 'webpack-dev-server/lib/utils/routes';
 
 const GuestsScreen = () => {
 
@@ -105,7 +106,10 @@ const GuestsScreen = () => {
             onPress={() =>navigation.navigate('Home', {
                 screen: 'Explore',
                 params: {
-                    screen : 'SearchResults'
+                    screen : 'SearchResults',
+                    params: {
+                        viewport: routes.params.viewport,
+                    }
                 },
             })
         }

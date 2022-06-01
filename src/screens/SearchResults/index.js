@@ -5,6 +5,9 @@ import Post from '../../components/Post';
 
 
 const SearchResultsScreen = (props) => {
+    
+    const { viewport } = props;
+
     return(
         <View>
             <FlatList
