@@ -21,7 +21,7 @@
       "supportsTablet": true
     },
     "android": {
-      "package": "airbnbclone.abhiraj",
+      "package": "com.reactnativeclones.airbnb",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
