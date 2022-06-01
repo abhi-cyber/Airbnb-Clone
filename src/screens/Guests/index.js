@@ -2,8 +2,8 @@ import { StyleSheet, Text, View, Pressable } from 'react-native';
 import React from 'react';
 import styles from './styles';
 import { useState } from 'react';
-import {useNavigation} from '@react-navigation/native';
-import routes from 'webpack-dev-server/lib/utils/routes';
+import {useNavigation, useRoute} from '@react-navigation/native';
+
 
 const GuestsScreen = () => {
 
