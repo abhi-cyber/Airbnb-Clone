@@ -20,9 +20,9 @@ const DestinationSearchScreen = () => {
                 navigation.navigate('Guests');
             }}
             // fetchDetails
-            // styles={{
-            //     textInput: styles.textInput,
-            // }}
+            styles={{
+                textInput: styles.textInput,
+            }}
             query={{
                 key: 'AIzaSyDatSzFq4M8he3iK7OBy2jMZt9DKUzoOgk' ,
                 language: 'en',
