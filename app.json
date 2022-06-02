@@ -18,6 +18,7 @@
       "**/*"
     ],
     "ios": {
+      "bundleIdentifier": "com.reactnativeclones.airbnb",
       "supportsTablet": true
     },
     "android": {

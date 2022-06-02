@@ -18,7 +18,7 @@ const HomeScreen = (props) => {
         <Text style={styles.title}>Go Near</Text>
       <Pressable
         style={styles.searchButton}
-        onPress={() =>navigation.navigate('Guests')}>
+        onPress={() =>navigation.navigate('Destination Search')}>
         <Ionicons name="search" size={25} color={'#f15454'} />
         <Text style={styles.searchButtonText}>Where are you going?</Text>
       </Pressable>
