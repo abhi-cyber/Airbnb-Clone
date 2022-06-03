@@ -3,28 +3,18 @@ import {StyleSheet} from 'react-native';
 const styles =StyleSheet.create({
     container: {
         padding:20,
+        flexDirection: "column",
         height: '100%',
-        backgroundColor: 'white',
     },
-    textInput: {
-        fontSize: 20,
-        marginBottom: 20,
+    card:{
+        flex: 1,
+        borderRadius: 15,
+        position: 'relative'
     },
-    row: {
-        flexDirection: 'row',
-        alignItems: 'center',
-        paddingVertical: 15,
-        borderBottomWidth: 1,
-        borderColor: 'lightgrey',
-    },
-    iconContainer: {
-        backgroundColor: '#e7e7e7',
-        padding: 7,
-        borderRadius: 5,
-        marginRight: 15,
-    },
-    locationText: {
-
+    image: {
+        position: 'absolute',
+        height: '100%',
+        width: '100%'
     },
 });
 

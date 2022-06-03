@@ -8,8 +8,6 @@ import Feather from 'react-native-vector-icons/Feather';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import ExploreNavigator from './ExploreNavigator';
 
-
-
 const Tab = createBottomTabNavigator();
 
 const HomeTabNavigator = (props) => {
