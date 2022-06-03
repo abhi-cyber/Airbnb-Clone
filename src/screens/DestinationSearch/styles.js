@@ -5,7 +5,6 @@ const styles =StyleSheet.create({
         padding:20,
         flexDirection: "column",
         height: 500,
-        flexWrap: 'wrap',
     },
     cont: {
         flexDirection: 'row',
@@ -13,14 +12,17 @@ const styles =StyleSheet.create({
         height: 225,
     },
     card:{
+        padding: 0,
         width: '50%',
         borderRadius: 15,
+        position: 'relative'
     },
     image: {
-        
+        position: 'absolute',
         height: '100%',
-        width: '100%'
-    },
+        width: '100%',
+    }
+    
 });
 
 export default styles;
