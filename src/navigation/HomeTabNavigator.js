@@ -7,6 +7,7 @@ import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import Feather from 'react-native-vector-icons/Feather';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import ExploreNavigator from './ExploreNavigator';
+import LoginScreen from '../screens/LoginScreen'
 
 const Tab = createBottomTabNavigator();
 
@@ -61,7 +62,7 @@ const HomeTabNavigator = (props) => {
 
         <Tab.Screen
             name={"Profile"}
-            component={HomeScreen}
+            component={LoginScreen}
             options={{
               headerShown: false,
                 tabBarIcon: ({color}) => (

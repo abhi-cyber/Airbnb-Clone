@@ -2,7 +2,7 @@ import React from 'react';
 import { NavigationContainer} from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import DestinationSearchScreen from '../screens/DestinationSearch';
-import HomeScreen from '../screens/Home';
+import LoginScreen from '../screens/LoginScreen';
 import GuestsScreen from '../screens/Guests';
 import HomeTabNavigator from './HomeTabNavigator';
 import PostScreen from '../screens/PostScreen/index';
@@ -15,6 +15,13 @@ const Router = (props) => {
     <NavigationContainer>
         <Stack.Navigator>
 
+        <Stack.Screen 
+        name = {"Login"}
+        component = {LoginScreen}
+        options={{
+          headerShown: false 
+        }}
+        />
         <Stack.Screen 
           name = {"Home"}
           component = {HomeTabNavigator}
@@ -49,6 +56,7 @@ const Router = (props) => {
           }}
           />
         </Stack.Navigator>
+        
 
     </NavigationContainer>
   )
